@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 export default function Home() {
@@ -11,6 +13,11 @@ export default function Home() {
           fill
           className="object-cover"
           priority
+          onClick={() =>
+            window.open(
+              "https://play.google.com/store/apps/details?id=com.cafe24.ec.plustropi&hl=ko"
+            )
+          }
         />
       </div>
 
@@ -65,6 +72,11 @@ export default function Home() {
           src={"/banner7.svg"}
           fill
           className="object-cover"
+          onClick={() =>
+            window.open(
+              "https://play.google.com/store/apps/details?id=com.cafe24.ec.plustropi&hl=ko"
+            )
+          }
         />
       </div>
 
