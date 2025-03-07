@@ -2,100 +2,95 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="flex flex-col bg-[#EAEAEA]">
+      {/* 이미지들이 화면에 꽉 차도록 설정 */}
+      <div className="relative w-full h-screen">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          alt="Banner 1"
+          src={"/banner1.svg"}
+          fill
+          className="object-cover"
           priority
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <div className="relative w-full h-screen">
+        <Image
+          alt="Banner 2"
+          src={"/banner2.svg"}
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      <div className="relative w-full h-screen">
+        <Image
+          alt="Banner 3"
+          src={"/banner3.svg"}
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      <div className="relative w-full h-screen">
+        <Image
+          alt="Banner 4"
+          src={"/banner4.svg"}
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      <div className="relative w-full h-screen">
+        <Image
+          alt="Banner 5"
+          src={"/banner5.svg"}
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      <div className="relative w-full h-screen">
+        <Image
+          alt="Banner 6"
+          src={"/banner6.svg"}
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      <div className="relative w-full h-screen">
+        <Image
+          alt="Banner 7"
+          src={"/banner7.svg"}
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      {/* 푸터는 별도 섹션으로 */}
+      <div className="w-full h-[350px] px-30 py-20 flex flex-col gap-2">
+        <div>
+          <Image alt="logo" src={"/tropi.svg"} width={180} height={50} />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="flex justify-between">
+          <div className="flex flex-col text-sm text-black font-Pretendard ">
+            (주)골든유스 | 경기도 구리시 건원대로 67, 4층 <br />
+            사업자번호: 774-87-02871 | 통신판매업번호: 2023-경기구리-0989호
+          </div>
+          <div className="flex text-sm text-black font-Pretendard gap-5 ">
+            <div className="flex flex-col font-bold">
+              <p>서비스 이용 문의</p> <p>파트너십, 제휴</p>
+            </div>
+            <div className="flex flex-col">
+              <div>
+                <p>@트로피_TROPI 카카오톡 채널</p>
+                <p>soo@goldenyouth.co.kr</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
