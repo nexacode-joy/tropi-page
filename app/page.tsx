@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className="flex flex-col bg-[#EAEAEA]">
       {isMobile ? (
-        <div className="relative w-full" style={{ height: "150vh" }}>
+        <div className="relative w-full">
           {/* 모바일 배너 이미지 (h-auto로 이미지 원래 비율 유지) */}
           <Image
             alt="Mobile Banner"
