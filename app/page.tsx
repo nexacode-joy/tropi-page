@@ -115,6 +115,7 @@ export default function Home() {
               src={"/banner6.svg"}
               fill
               className="object-cover"
+              onClick={() => window.open("http://pf.kakao.com/_pxgxmjG")}
             />
           </div>
           <div className="relative w-full h-screen">
