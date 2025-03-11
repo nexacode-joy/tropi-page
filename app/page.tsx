@@ -54,6 +54,11 @@ export default function Home() {
               )
             }
           />
+          <div
+            className="absolute transform w-full h-[4.1%] cursor-pointer !w-1/2 left-[25%]"
+            style={{ bottom: "27.15%" }} // 이미지가 길어도 고정된 위치
+            onClick={() => window.open("http://pf.kakao.com/_pxgxmjG")}
+          />
         </div>
       ) : (
         <>
